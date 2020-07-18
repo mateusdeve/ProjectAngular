@@ -1,0 +1,33 @@
+<div class="container">
+    <div fxLayout="row" fxLayoutAlign="center center">
+        <div fxFlex="100%" class="text-center">
+            <h1 class="mt-3 mb-3">Titulo</h1>
+        </div>
+    </div>
+    <div fxLayout="row">
+
+        <div *ngFor="let c of contatos" fxFlex="100%">
+  
+              <mat-card fxFlex="95%">
+                  <mat-card-header>
+                      <mat-card-title>Usuario {{c.id}}</mat-card-title>
+                      <mat-card-subtitle> {{c.nome}} </mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                      <p>
+                        {{c.email}}
+                      </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                      <button mat-raised-button class="color-teste">Primary</button>
+                      <button mat-raised-button color="primary">Primary</button>
+                    </mat-card-actions>
+              </mat-card>
+        </div>
+
+
+      </div>
+        
+</div>
+
+ 

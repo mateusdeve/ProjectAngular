@@ -1,0 +1,11 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.color-teste {
+    background-color: #03DAC6;
+}
+
+.color-teste {
+    color: #fff;
+}
