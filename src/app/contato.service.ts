@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+
 @Injectable({
   providedIn: 'root'
 })
 export class ContatoService {
 
-  contatosUrl = "http://localhost:8080/users";
+  contatosUrl = "https://spring-boot-mateus.herokuapp.com/users";
 
   constructor(private http: HttpClient) { }
 

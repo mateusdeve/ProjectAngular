@@ -1,5 +1,5 @@
-import { ContatoService } from './../contato.service';
 import { Component, OnInit } from '@angular/core';
+import { ContatoService } from './../contato.service';
 
 @Component({
   selector: 'app-card',
@@ -17,6 +17,7 @@ contatos: Array<any>;
   }
 
   listar(){
-    this.contatoService.listar().subscribe(dados => this.contatos = dados)
+    this.contatoService.listar()
+    .subscribe(dados => this.contatos = dados)
   }
 }

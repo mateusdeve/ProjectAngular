@@ -23,7 +23,6 @@ import { ContatoService } from './contato.service';
     CardComponent,
   ],
   imports: [
-    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -33,6 +32,7 @@ import { ContatoService } from './contato.service';
     MatGridListModule,
     MatCardModule,
     FlexLayoutModule,
+    HttpClientModule,
   ],
   providers: [ ContatoService ],
   bootstrap: [AppComponent]
